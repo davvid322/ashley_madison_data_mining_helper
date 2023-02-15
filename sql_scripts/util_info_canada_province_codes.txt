@@ -1,0 +1,20 @@
+/* Code to translate state numeric code into province for Canada.
+*/
+SELECT state, 
+    CASE state 
+      WHEN 57 THEN 'Alberta'
+      WHEN 58 THEN 'B.C.'
+      WHEN 59 THEN 'Manitoba'
+      WHEN 60 THEN 'New Brunswick'
+      WHEN 61 THEN 'Newfoundland'
+      WHEN 62 THEN 'Nova Scotia'
+      WHEN 63 THEN 'Nunavit'
+      WHEN 64 THEN 'N.W.T.'
+      WHEN 65 THEN 'Ontario'
+      WHEN 66 THEN 'PEI'
+      WHEN 67 THEN 'Quebec'
+      WHEN 68 THEN 'Saskatchewan'
+      WHEN 69 THEN 'Yukon'
+      ELSE 'Unknown'
+	END AS Province,
+
